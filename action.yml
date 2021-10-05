@@ -1,0 +1,20 @@
+name: 'AppCenter Range Delete Extension'
+description: 'Search for distributions on AppACenter based on the criteria input value, this action uses the distribution object attribute "short_version" to match the criteria input'
+author: 'Marcelo Severgnini <marcelo.severgnini@diconium.com>'
+inputs:
+  criteria_value:
+    description: 'Criteria value to search'
+    required: true
+    default: '0'
+  appName:
+    description: "App name followed by username e.g. marcelosevergnini-dico/Sample-App"
+    required: true
+  token:
+    description: "Upload token - you can get one from appcenter.ms/settings"
+    required: true
+outputs:
+  output_list:
+    description: "Distributions found based on the criteria input value"
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,28 @@
+{
+  "name": "appcenter-github-action-seach-extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "ncc build index.js -o dist --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelosevergnini-dico/appcenter-github-action-seach-extensions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelosevergnini-dico/appcenter-github-action-seach-extensions/issues"
+  },
+  "homepage": "https://github.com/marcelosevergnini-dico/appcenter-github-action-seach-extensions#readme",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1"
+  }
+}
